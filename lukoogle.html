@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukoogle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            color: #4285F4;
+        }
+
+        .logo span {
+            color: #EA4335;
+        }
+
+        .logo .g2 {
+            color: #FBBC05;
+        }
+
+        .logo .l {
+            color: #34A853;
+        }
+
+        .search-container {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 15px 20px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            font-size: 18px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            outline: none;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .search-bar:focus {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .button {
+            background-color: #f8f9fa;
+            color: #202124;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #f1f3f4;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            font-size: 12px;
+            color: #5f6368;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        L<span>u</span><span class="g2">k</span>o<span class="g2">o</span>g<span class="l">l</span>e
+    </div>
+    <div class="search-container">
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q" class="search-bar" placeholder="Digite sua busca...">
+            <div class="buttons">
+                <button type="submit" class="button">Pesquisa Lukoogle</button>
+                <button type="button" class="button" onclick="window.location.href='https://www.google.com/doodles/'">Estou com sorte</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        Desenvolvido por Lukas.
+    </footer>
+</body>
+</html>
